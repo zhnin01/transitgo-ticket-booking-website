@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find a trip – TransitGo</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>🚆 TransitGo</h1><p>Book trains and buses across the UK</p></header>
+<nav id="nav"></nav>
+<main>
+<form id="f" class="card row">
+  <label>From <select id="from"><option value="">Any</option></select></label>
+  <label>To <select id="to"><option value="">Any</option></select></label>
+  <label>Travel date <input type="date" id="date" required></label>
+  <button class="btn">Search</button>
+</form>
+<div id="msg"></div>
+<div id="list"></div>
+<dialog id="dlg"><form id="bf">
+  <h3 id="dtitle" style="margin-top:0"></h3><p class="mu" id="dsub"></p>
+  <p class="mu" style="margin:0 0 6px">Pick a seat. Grey seats are taken. Letters are rows.</p>
+  <div id="seatmap" class="seats"></div>
+  <p id="sel" style="margin:6px 0"><b>No seat selected</b></p>
+  <label>Bags <input id="lug" type="number" min="0" max="5" value="1"></label>
+  <label>Payment <select id="pay"><option>Card</option><option>Cash</option></select></label>
+  <div id="derr" class="err"></div>
+  <div class="row"><button class="btn">Confirm booking</button><button type="button" class="btn ghost" id="dclose">Close</button></div>
+</form></dialog>
+</main>
+<script src="js/app.js"></script>
+<script src="js/search.js"></script>
+</body></html>

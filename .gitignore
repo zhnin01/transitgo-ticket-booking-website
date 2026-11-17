@@ -1,0 +1,5 @@
+# Packaging and OS files
+*.zip
+.DS_Store
+Thumbs.db
+*.log

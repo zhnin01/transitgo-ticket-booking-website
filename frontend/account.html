@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My account – TransitGo</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>🚆 TransitGo</h1><p>Book trains and buses across the UK</p></header>
+<nav id="nav"></nav>
+<main><div class="narrow">
+<h2>My account</h2>
+<div id="msg"></div>
+<form id="details" class="card">
+  <h3 style="margin-top:0">Your details</h3>
+  <label>Email (can’t be changed) <input id="email" disabled></label>
+  <div class="row"><label>First name <input id="first_name" maxlength="50" required></label><label>Last name <input id="last_name" maxlength="50" required></label></div>
+  <label>Phone <input id="phone_no" maxlength="20" required></label>
+  <label>Street <input id="street_name" maxlength="100" required></label>
+  <div class="row"><label>City <input id="city" maxlength="20" required></label><label>Postcode <input id="postcode" maxlength="10" required></label></div>
+  <button class="btn">Save details</button>
+</form>
+<form id="pwform" class="card">
+  <h3 style="margin-top:0">Change password</h3>
+  <label>Current password <input type="password" id="cur" required></label>
+  <label>New password (8+ characters) <input type="password" id="new" minlength="8" required></label>
+  <label>Repeat new password <input type="password" id="new2" minlength="8" required></label>
+  <button class="btn">Change password</button>
+</form>
+</div></main>
+<script src="js/app.js"></script>
+<script src="js/account.js"></script>
+</body></html>

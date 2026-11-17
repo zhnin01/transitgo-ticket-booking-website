@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin – TransitGo</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>🚆 TransitGo</h1><p>Book trains and buses across the UK</p></header>
+<nav id="nav"></nav>
+<main>
+<div class="tabs"><button id="tab-b" class="on">Bookings</button><button id="tab-r">Routes</button></div>
+<div id="msg"></div>
+<div id="out"></div>
+<dialog id="rd"><form id="rf">
+  <h3 id="rtitle" style="margin-top:0">Route</h3>
+  <div class="row"><label>From <input id="r_start" required maxlength="50"></label><label>To <input id="r_end" required maxlength="50"></label></div>
+  <div class="row"><label>Type <select id="r_type"><option>Train</option><option>Bus</option></select></label>
+    <label>Distance (km) <input id="r_dist" type="number" step="0.01" min="0.01" required></label>
+    <label>Price (£) <input id="r_price" type="number" step="0.01" min="0" required></label></div>
+  <div class="row"><label>Departs <input id="r_dep" type="time" required></label><label>Arrives <input id="r_arr" type="time" required></label></div>
+  <div id="rerr" class="err"></div>
+  <div class="row"><button class="btn">Save route</button><button type="button" class="btn ghost" id="rclose">Close</button></div>
+</form></dialog>
+</main>
+<script src="js/app.js"></script>
+<script src="js/admin.js"></script>
+</body></html>
